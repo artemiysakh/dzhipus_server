@@ -3,16 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "postinstall": "npm rebuild bcrypt --build-from-source"
-  },
+ "scripts": {
+  "start": "node index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
     "celebrate": "^15.0.3",
     "convert-excel-to-json": "^1.7.0",
     "cookie-parser": "^1.4.7",
@@ -42,7 +41,7 @@
   "devDependencies": {
     "webpack-cli": "^6.0.1"
   },
-   "engines": {
-     "node": "18.x"
+  "engines": {
+    "node": "18.x"
   }
 }
