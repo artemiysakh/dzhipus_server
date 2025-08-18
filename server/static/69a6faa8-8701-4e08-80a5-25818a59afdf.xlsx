@@ -1,0 +1,11 @@
+PORT=5000
+URL = 'mongodb://localhost:27017/'
+JWT_ACCESS_SECRET = 'jwt-secret-key_1223456565Q5SS'
+JWT_REFRESH_SECRET='jwt-refresh-secret-key_164882044469E0D'
+SMTP_HOST="smtp.yandex.ru"
+SMTP_PORT=587
+SMTP_USER='artemiysakh0310@yandex.ru'
+SMTP_PASSWORD='rhifpspbtdubkzpg'
+API_URL=http://localhost:5000
+CLIENT_URL=http://localhost:3000
+COOKIE_SECRET = cookie-secret_key_q1bfj3
