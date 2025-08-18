@@ -24,6 +24,7 @@ app.use(cookieParser(process.env.COOKIE_SECRET))
 
 app.use(cors({
   origin: [
+    'https://dzhipus.vercel.app',
     process.env.CLIENT_URL
   ],
   credentials: true
