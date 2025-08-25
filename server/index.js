@@ -20,7 +20,7 @@ const app=express()
 app.set('trust proxy', 1);
 
 app.use(express.json())
-app.use(cookieParser())
+app.use(cookieParser(process.env.COOKIE_SECRET))
 
 app.use(cors({
   origin: [
