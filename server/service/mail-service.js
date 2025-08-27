@@ -12,6 +12,7 @@ class MailService{
         })
     }
     async sendActivationMail(to, link){
+        try {
         await this.transporter.sendMail({
             from: process.env.SMTP_USER,
             to,
@@ -27,6 +28,10 @@ class MailService{
             </div>
             `
         })
+        console.log('Email sent');
+    }catch(e){
+         console.error('Email sending error:', error);
+    }
     }
     async sendPasswordResetMail(to, link){
       await this.transporter.sendMail({
